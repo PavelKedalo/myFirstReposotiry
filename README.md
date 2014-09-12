@@ -1,5 +1,6 @@
 myFirstReposotiry
 =================
-Hello world!
+echo "Hello world!";
+
 
 myFirstReposotiryDescription
