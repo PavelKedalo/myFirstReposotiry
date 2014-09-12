@@ -178,6 +178,7 @@ $(document).ready(function() {
 		});
 
 		$('#uploaded-files').show();
+		
 		return false;
 	});
 	
