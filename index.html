@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Upload</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="assets/scripts/jquery-2.1.1.min.js"></script>
+<script src="assets/scripts/upload.js"></script>
+
+<script src="javascript.js"></script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+	<blockquote>
+        
+        <p style="font-size:16px">
+            Форма для загрузки HTML страницы и конвертирования ее в PDF.
+        </p>
+    </blockquote>
+
+	<div class="content">
+		
+	        <form id="frm">
+	        	<div class="fileform">
+		            <div id="fileformlabel"></div>
+		            <div class="selectbutton">Обзор</div>
+		            <input type="file" name="upload" id="uploadbtn" onchange="getName(this.value);" multiple />
+		        </div>
+	        </form>
+
+		<div id="uploaded-holder"> 
+			<div id="dropped-files">
+	        	<div id="upload-button">
+	            	<center>
+
+	                	<span>0 Файлов</span>
+						<div class="btn blue selectbutton upload">Загрузить</div>
+						<div class="btn red selectbutton delete">Удалить</div>
+
+	                	<div id="loading">
+							<div id="loading-bar">
+								<div class="loading-color"></div>
+							</div>
+							<div id="loading-content"></div>
+						</div>
+
+	                </center>
+				</div>  
+	        </div>
+		</div>
+
+		<div id="file-name-holder">
+			<ul id="uploaded-files">
+				<h1>Загруженные файлы</h1>
+			</ul>
+		</div>
+	    
+	</div>
+</body>
+</html>
